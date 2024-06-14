@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+    <style>
+    	body{
+    background-color: rgb( 229, 232, 232);
+}
+section{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    
+}
+div{
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 5px;
+    line-height: 1.3;
+
+}
+button{
+    padding: 10px 45px;
+    border: none;
+    background-color: rgb(250, 51, 51);;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+
+}
+button:hover{
+    background-color: rgb(255, 4, 4);
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>RULES</h1>
+    </div>
+   
+    <section>
+        <br>
+        <div>
+            <p>Select the number between 1-31
+            Check the each box wether its present or not in the box.
+            If its present select YES button ,If not select No button.</p>
+        </div>
+    </section>
+    <div>
+        <button onclick="playgame()">Continue</button>
+    </div>
+    <script>
+    function playgame(){
+    location.replace("select.html");
+}
+document.addEventListener("selectstart",function(e){
+    e.preventDefault();
+});
+    </script>
+</body>
+</html>
